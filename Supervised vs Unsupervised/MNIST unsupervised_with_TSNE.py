@@ -23,7 +23,7 @@ labels = pd.DataFrame(labels.astype(int))   # this has the target variable
 single_image = np.array(pixel_values.iloc[0]).reshape(28,28)
 plt.imshow(single_image)
 # plt.show()
-
+ 
 # below code is to change these many features into two using T-SNE
 tsne = manifold.TSNE(n_components= 2, random_state= 123)
 transformed_data = tsne.fit_transform(pixel_values[:3000])   # this means top 3000 rows and no slicing on columns
