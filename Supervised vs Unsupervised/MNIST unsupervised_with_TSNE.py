@@ -38,4 +38,3 @@ print(final_data.head(10))
 
 grid = sns.FacetGrid(final_data, hue = 'labels' , size = 8)
 grid.map(plt.scatter, 'X' , 'y').add_legend()
-grid.show()
