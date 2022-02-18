@@ -17,6 +17,15 @@ kfold = KFold(n_splits=5)
 # fold will be fold number, ie., subset dataframe number.
 for fold, (trn_ , val_) in enumerate(kfold.split(X= data)):
     data.loc[val_,'kfold'] = fold
-    print(val_, fold)
+    # print(val_, fold)
+
+    training_data = data.loc[trn_, :] 
+    validation_data = data.loc[val_, :] 
+
+    print("---"*20)
+    print(f"Training:{fold}",training_data)
+    print(f"Validation:{fold}", validation_data)
+
+    
 
 data.to_csv(r'Cross Validation\Data with Kfold column.csv' , index = None)
