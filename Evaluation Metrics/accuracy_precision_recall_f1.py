@@ -16,16 +16,11 @@ def accuracy(y_true, y_pred):
 def precision(y_true, y_pred):
     tp = true_positive(y_true, y_pred)
     fp = false_positive(y_true, y_pred)
-    tn = true_negative(y_true, y_pred)
-    fn = false_negative(y_true, y_pred)
-
     return tp/(tp+fp)
 
 
 def recall(y_true, y_pred):
     tp = true_positive(y_true, y_pred)
-    fp = false_positive(y_true, y_pred)
-    tn = true_negative(y_true, y_pred)
     fn = false_negative(y_true, y_pred)
 
     return tp/(tp+fn)
@@ -40,7 +35,7 @@ def f1_score(y_true, y_pred):
 l1 = [0,1,1,1,0,0,0,1]
 l2 = [0,1,0,1,0,1,0,0]
 
-print(accuracy(l1,l2))
-print(precision(l1,l2))
-print(recall(l1,l2))
-print(f1_score(l1,l2))
+# print(accuracy(l1,l2))
+# print(precision(l1,l2))
+# print(recall(l1,l2))
+# print(f1_score(l1,l2))
