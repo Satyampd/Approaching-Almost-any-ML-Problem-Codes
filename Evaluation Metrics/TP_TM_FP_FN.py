@@ -32,7 +32,7 @@ def false_negative(y_true,y_pred):
 
 l1 = [0,1,1,1,0,0,0,1]
 l2 = [0,1,0,1,0,1,0,0]
-print(true_positive(l1,l2))
-print(false_positive(l1,l2))
-print(false_negative(l1,l2))
-print(true_negative(l1,l2))
+# print(true_positive(l1,l2))
+# print(false_positive(l1,l2))
+# print(false_negative(l1,l2))
+# print(true_negative(l1,l2))
