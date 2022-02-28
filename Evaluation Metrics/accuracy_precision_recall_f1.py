@@ -36,6 +36,9 @@ l1 = [0,1,1,1,0,0,0,1]
 l2 = [0,1,0,1,0,1,0,0]
 
 # print(accuracy(l1,l2))
-# print(precision(l1,l2))
+print(precision(l1,l2))
 # print(recall(l1,l2))
 # print(f1_score(l1,l2))
+
+
+
