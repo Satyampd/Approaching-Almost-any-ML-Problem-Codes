@@ -15,7 +15,7 @@ Here are 2 ways to find the optimal threshold:
 
 ## Micro and Macro Average - Precision/Recall/F1
 
-A micro-average is dominated by the more frequent class, since the counts are pooled. Good when concerned have class imbalance.
+A micro-average is dominated by the more frequent class, since the counts are pooled. Good when we have class imbalance.
 
 The macro-average better reflects the statistics of the smaller classes, and so is more appropriate when performance on all the classes is equally important. Macro-average metric is insensitive to the imbalance of the classes and treats them all as equal.
 
